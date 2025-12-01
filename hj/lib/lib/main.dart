@@ -11,6 +11,7 @@ import 'Topicos.dart';
 import 'fila.dart';
 import 'tendencias.dart';
 import 'ejemploMobile.dart';
+import 'perfil.dart';
 
 void main() {
   runApp(const MyApp());

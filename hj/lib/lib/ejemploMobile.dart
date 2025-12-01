@@ -70,6 +70,41 @@ Widget _buildCard({
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  width: 190,
+                                  height: 305,
+                                  decoration: const BoxDecoration(
+                                    color:  Color.fromARGB(255, 252, 255, 77),
+                                    borderRadius: 
+                                      BorderRadius.all(Radius.circular(34))
+                                  ),
+                                  child: const Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('Finishe', style: TextStyle(
+                                        color: Color.fromARGB(255, 0, 0, 0),
+                                        fontWeight: FontWeight.bold,
+                                         fontSize: 33,)),
+                                         SizedBox(height: 20),
+                                      Text('1', style: TextStyle(
+                                        color: Color.fromARGB(255, 0, 0, 0),
+                                        fontWeight: FontWeight.bold,
+                                         fontSize: 46,)),
+                                        SizedBox(height: 20),
+                                      Text('Complete', style: TextStyle(
+                                        color: Color.fromARGB(255, 0, 0, 0),
+                                        fontWeight: FontWeight.bold,
+                                         fontSize: 20,)
+                                  )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            )
+                            ,
+                            Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Container(
@@ -147,40 +182,7 @@ Widget _buildCard({
                                 ),
                               ],
                             ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  width: 190,
-                                  height: 305,
-                                  decoration: const BoxDecoration(
-                                    color:  Color.fromARGB(255, 252, 255, 77),
-                                    borderRadius: 
-                                      BorderRadius.all(Radius.circular(34))
-                                  ),
-                                  child: const Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text('Finishe', style: TextStyle(
-                                        color: Color.fromARGB(255, 0, 0, 0),
-                                        fontWeight: FontWeight.bold,
-                                         fontSize: 33,)),
-                                         SizedBox(height: 20),
-                                      Text('1', style: TextStyle(
-                                        color: Color.fromARGB(255, 0, 0, 0),
-                                        fontWeight: FontWeight.bold,
-                                         fontSize: 46,)),
-                                        SizedBox(height: 20),
-                                      Text('Complete', style: TextStyle(
-                                        color: Color.fromARGB(255, 0, 0, 0),
-                                        fontWeight: FontWeight.bold,
-                                         fontSize: 20,)
-                                  )
-                                    ],
-                                  ),
-                                )
-                              ],
-                            )
+                            
                           ],
                         ),
                       ),
@@ -215,6 +217,21 @@ Widget _buildCard({
                                 ],
                               ),
                             )
+                      ),
+                      Container(
+                        padding: const EdgeInsets.only(left: 25, top: 10),
+                        
+                        child: const Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text("Keep the progress!", style: TextStyle(
+                                            fontSize: 34,
+                                            fontWeight: FontWeight.bold
+                                          ),)
+                                        ],
+                                      ),
+
+                        // child: const Text("Keep the progess!", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
                       )
                  ],
              ),
