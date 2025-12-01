@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       //  home: HolaMundo(),
       initialRoute: "/",
       routes: {
-        "/": (context) => const ejemploMobile(),
+        "/": (context) => const perfil(),
         "/EjHolaMundo": (context) => const HolaMundo(),
       },
     );

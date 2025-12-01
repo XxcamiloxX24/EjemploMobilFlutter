@@ -1,5 +1,5 @@
 import "package:ado/lib/contenedor.dart";
-import "package:flutter/material.dart";
+import 'package:flutter/material.dart';
 
 
 
@@ -55,8 +55,8 @@ Widget _buildCard({
                           Container(
                             height: 200,
                             width: 200,
-                            decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 252, 193, 0),
+                            decoration: const BoxDecoration(
+                              color: Color.fromARGB(255, 252, 193, 0),
                               borderRadius: BorderRadius.all(Radius.circular(100))
                             ),
                             child: Image.asset("assets/img/avatar.png"),
